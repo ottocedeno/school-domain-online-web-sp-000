@@ -9,13 +9,13 @@ class School
     @roster = Hash.new
   end
 
-  # def add_student(student, grade)
-  #   if @roster.keys.include?(grade)
-  #     @roster[grade] << student
-  #   else
-  #     @roster[grade] = Array.new(1, student)
-  #   end
-  # end
+  def add_student(student, grade)
+    if @roster.keys.include?(grade)
+      @roster[grade] << student
+    else
+      @roster[grade] = Array.new(1, student)
+    end
+  end
 
   def add_student(student, grade)
     @roster[grade] ||= []
