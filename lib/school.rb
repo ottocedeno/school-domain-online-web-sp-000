@@ -17,10 +17,12 @@ class School
     end
   end
 
-  def add_student(student, grade)
-    @roster[grade] ||= []
-    @roster[grade] << student
-  end
+  # Flatiron Answer:  Uses the conditional assignment operator...
+  
+  # def add_student(student, grade)
+  #   @roster[grade] ||= []
+  #   @roster[grade] << student
+  # end
 
 
   def grade(grade)
