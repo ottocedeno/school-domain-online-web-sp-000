@@ -17,6 +17,11 @@ class School
     end
   end
 
+  def add_student(student, grade)
+
+  end
+
+
   def grade(grade)
     @roster[grade]
   end
